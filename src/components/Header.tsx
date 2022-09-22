@@ -6,6 +6,7 @@ export default function Header() {
     <StyledHeader>
         <Img src='../assets/pics/home-picture.png' alt=''/>
         <Nav>
+          <img src="../assets/List.png" alt="menu" className='menu-icon'/>
           <ul>
             <li>Çözüm ve Hizmetler</li>
             <li>Ürünler</li>

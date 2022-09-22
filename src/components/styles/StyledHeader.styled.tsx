@@ -1,12 +1,17 @@
 import styled from "styled-components"
 
-export const StyledHeader = styled.header``
+export const StyledHeader = styled.header`
+    width: 100vw;
+    height: 100vh;
+`
 
 export const Nav = styled.nav`
     display: flex;
     justify-content: flex-end;
     padding: 30px 100px;
-    font-family: 'Manrope', sans-serif;
+    .menu-icon {
+        display: none;
+    }
     ul {
         display: flex;
         justify-content: space-around;
@@ -24,7 +29,6 @@ export const Nav = styled.nav`
         }
     }
     button {
-        font-family: 'Manrope', sans-serif;
         font-size: 14px;
         font-weight: 800;
         border: none;
@@ -38,6 +42,27 @@ export const Nav = styled.nav`
             box-shadow: 0px 2px 5px 0px #000000;
         }
     }
+    @media(max-width:1024px){
+        & > ul {
+            width: 80%;
+            & > li {
+                margin: 0 10px;
+            }
+        }
+    }
+    @media(max-width:420px){
+        padding: 30px;
+        justify-content: space-between;
+        .menu-icon {
+            display: block;
+            &:hover ul {
+                display: block;
+            }
+        }
+        ul {
+            display: none;
+        }
+    }
 ` 
 
 export const Container = styled.div`
@@ -46,7 +71,6 @@ export const Container = styled.div`
     justify-content: space-between;
     width: 48%;
     height: 400px;
-    font-family: 'Manrope', sans-serif;
     margin: 100px 0 0 120px;
     .home-title {
         font-size: 64px;
@@ -67,7 +91,6 @@ export const Container = styled.div`
         align-items: center;
     }
     input {
-        font-family: 'Manrope', sans-serif;
         font-size: 16px;
         padding-left: 15px;
         border: none;
@@ -77,7 +100,6 @@ export const Container = styled.div`
         outline: none;
     }
     button {
-        font-family: 'Manrope', sans-serif;
         font-size: 16px;
         font-weight: 800;
         border: none;
@@ -92,11 +114,35 @@ export const Container = styled.div`
             box-shadow: 0px 2px 5px 0px #000000;
         }
     }
+    @media(max-width:1024px){
+        width: 65%;
+    }
+    @media(max-width:420px){
+        width: 90%;
+        margin: 50px 20px;
+        .home-title {
+            font-size: 42px;
+            text-align: center;
+        }
+        .home-text {
+            font-size: 12px;
+            line-height: 24px;
+            text-align: center;
+        }
+        .input-container {
+            width: 100%;
+        }
+    }
 ` 
 
 export const Img = styled.img`
     position: absolute;
     z-index: -1;
-    width: 100vw;
-    height: 100wh;
+    width: 100%;
+    height: 100%;
+    @media(max-width:420px){
+        opacity: 0.5;
+        left: -380px;
+        width: 1024px;
+    }
 ` 
