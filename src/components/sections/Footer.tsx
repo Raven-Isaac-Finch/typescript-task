@@ -1,5 +1,5 @@
 import React from 'react'
-import { BottomContainer, Section, StyledFooter, TopContainer } from './styles/StyledFooter.styled'
+import { BottomContainer, Section, StyledFooter, TopContainer } from '../styles/StyledFooter.styled'
 
 export default function Footer() {
   return (
@@ -7,29 +7,29 @@ export default function Footer() {
         <TopContainer>
             <Section>
                 <h4>Çözüm ve Hizmetler</h4>
-                <a href="#0">Yazılım Geliştirme</a>
-                <a href="#0">Outsourcing</a>
-                <a href="#0">Kalite ve Süreç Yönetimi</a>
-                <a href="#0">Danışmanlık</a>
-                <a href="#0">IoT Destekli Çözümler</a>
+                <a href="#!">Yazılım Geliştirme</a>
+                <a href="#!">Outsourcing</a>
+                <a href="#!">Kalite ve Süreç Yönetimi</a>
+                <a href="#!">Danışmanlık</a>
+                <a href="#!">IoT Destekli Çözümler</a>
             </Section>
             <Section>
                 <h4>Ürünler</h4>
-                <a href="#0">Eğitim Yönetim Sistemi</a>
-                <a href="#0">İnsan Sermayesi Yönetim Sistemi</a>
-                <a href="#0">Müşteri İlişkileri Yönetim Sistemi</a>
-                <a href="#0">İçerik Yönetim Sistemi</a>
+                <a href="#!">Eğitim Yönetim Sistemi</a>
+                <a href="#!">İnsan Sermayesi Yönetim Sistemi</a>
+                <a href="#!">Müşteri İlişkileri Yönetim Sistemi</a>
+                <a href="#!">İçerik Yönetim Sistemi</a>
             </Section>
             <Section>
                 <h4>Kurumsal</h4>
-                <a href="#0">Hakkımızda</a>
-                <a href="#0">Belge ve Yetkinlikler</a>
-                <a href="#0">İş Ortakları</a>
+                <a href="#!">Hakkımızda</a>
+                <a href="#!">Belge ve Yetkinlikler</a>
+                <a href="#!">İş Ortakları</a>
             </Section>
             <Section>
                 <h4>İletişim</h4>
-                <a href="#0">Bilgi İstek Formu</a>
-                <a href="#0">Uzman Talep Formu</a>
+                <a href="#!">Bilgi İstek Formu</a>
+                <a href="#!">Uzman Talep Formu</a>
             </Section>
         </TopContainer>
         <BottomContainer>

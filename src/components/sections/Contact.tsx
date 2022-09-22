@@ -1,6 +1,6 @@
 import React from 'react'
-import { Circle } from './Circle'
-import { ContactContainer, StyledContact } from './styles/StyledContact.styled'
+import { Circle } from '../Circle'
+import { ContactContainer, StyledContact } from '../styles/StyledContact.styled'
 
 export default function Contact() {
   return (

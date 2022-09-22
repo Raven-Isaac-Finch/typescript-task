@@ -1,5 +1,5 @@
 import React from 'react'
-import { ExplanationsContainer, StyledExplanations } from './styles/StyledExplanations.styled'
+import { ExplanationsContainer, StyledExplanations } from '../styles/StyledExplanations.styled'
 
 export default function ExplanationPage() {
   return (

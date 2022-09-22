@@ -1,5 +1,5 @@
 import React from 'react'
-import { BGImg, Description, Steps, StyledMidStripe } from './styles/StyledMidStripe.styled'
+import { BGImg, Description, Steps, StyledMidStripe } from '../styles/StyledMidStripe.styled'
 
 export default function MidStripe() {
   return (

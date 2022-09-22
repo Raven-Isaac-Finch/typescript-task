@@ -1,13 +1,14 @@
 import React from 'react'
-import { Container, Img, Nav, StyledHeader } from './styles/StyledHeader.styled'
+import { MenuContainer } from '../MenuContainer'
+import { Container, Img, Nav, StyledHeader } from '../styles/StyledHeader.styled'
 
 export default function Header() {
   return (
     <StyledHeader>
         <Img src='../assets/pics/home-picture.png' alt=''/>
         <Nav>
-          <img src="../assets/List.png" alt="menu" className='menu-icon'/>
-          <ul>
+          <MenuContainer />
+          <ul className='header-menu'>
             <li>Çözüm ve Hizmetler</li>
             <li>Ürünler</li>
             <li>Teknolojiler</li>
