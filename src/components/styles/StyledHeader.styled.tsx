@@ -13,8 +13,9 @@ export const Nav = styled.nav`
     padding: 30px 100px;
     .menu-icon {
         display: none;
+        cursor: pointer;
     }
-    ul {
+    .header-menu {
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -45,7 +46,7 @@ export const Nav = styled.nav`
         }
     }
     @media(max-width:1024px){
-        & > ul {
+        .header-menu {
             width: 80%;
             & > li {
                 margin: 0 10px;
@@ -55,14 +56,39 @@ export const Nav = styled.nav`
     @media(max-width:420px){
         padding: 30px;
         justify-content: space-between;
+        position: relative;
         .menu-icon {
             display: block;
-            &:hover ul {
-                display: block;
+            border-radius: 5px 5px 0 0;
+            transition: 0.2s ease-in-out;
+            padding: 5px;
+        }
+        .menu-icon.clicked {
+            background-color: #F84646;
+        }
+        .header-menu {
+            width: 0;
+            opacity: 0;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: flex-start;
+            position: absolute;
+            top: 70px;
+            background-color: #F84646;
+            border-radius: 0 15px 15px 15px;
+            color: white;
+            transition: 0.2s ease-in-out;
+            & > li {
+                padding: 15px 10px;
+                transition: 0.2s ease-in-out;
+                &:hover {
+                    color: black;
+                }
             }
         }
-        ul {
-            display: none;
+        .header-menu.active {
+            width: auto;
+            opacity: 1;
         }
     }
 ` 
@@ -121,7 +147,7 @@ export const Container = styled.div`
     }
     @media(max-width:420px){
         width: 90%;
-        margin: 50px 20px;
+        margin: 120px 20px;
         .home-title {
             font-size: 42px;
             text-align: center;
