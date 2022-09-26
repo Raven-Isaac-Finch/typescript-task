@@ -3,6 +3,8 @@ import styled from "styled-components"
 export const StyledHeader = styled.header`
     width: 100vw;
     height: 100vh;
+    position: relative;
+    overflow: hidden;
 `
 
 export const Nav = styled.nav`
@@ -144,5 +146,6 @@ export const Img = styled.img`
         opacity: 0.5;
         left: -380px;
         width: 1024px;
+        overflow: hidden;
     }
 ` 

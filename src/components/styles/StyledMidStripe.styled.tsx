@@ -10,6 +10,7 @@ export const StyledMidStripe = styled.div`
     justify-content: space-around;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
     @media(max-width:420px){
         height: 100vh;
     }
@@ -23,6 +24,7 @@ export const BGImg = styled.img`
         transform: rotate(90deg);
         width: 100vh;
         height: 600px;
+        
     }
 `
 
