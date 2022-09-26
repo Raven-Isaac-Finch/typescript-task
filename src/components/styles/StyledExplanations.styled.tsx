@@ -61,7 +61,7 @@ export const ExplanationsContainer = styled.div`
         }
     }
     @media(max-width:420px){
-        width: 85%;
+        width: 90%;
         grid-template: auto auto auto auto / 335px;
         grid-column-gap: 0;
         grid-row-gap: 50px;

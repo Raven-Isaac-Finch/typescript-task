@@ -76,7 +76,7 @@ export const DetailsContainer = styled.div`
         margin: 20px auto;
         .detail {
             width: 90%;
-            margin: 15px 0 15px 20px;
+            margin: 15px 0;
         }
     }
 `
